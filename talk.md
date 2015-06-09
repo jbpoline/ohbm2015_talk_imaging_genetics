@@ -48,8 +48,8 @@ Reproducibility - evidence of the problem
 
 > * In brain imaging
     - Reproducibility Issues in Multicentre MRI Studies, J. Jovicich 
-    - Raemaekers,  “Test–retest Reliability of fMRI...",  Neuroimage, 2007 
-    - Thirion et al., Neuroimage 2007.
+    - Raemaekers,  “Test–retest Reliability of fMRI...",  2007 
+    - Thirion et al., 2007: reproducibility of second level analyses
 
 > * In genetics
     - Ionannidis 2007: 16 SNPs hypothesized, check on 12-32k cancer/control: "... results are largely null." 
@@ -101,7 +101,6 @@ The power issue
 ===================
 What exactly is power ?
 -----------------------
-
 ![Power: $\large{W = 1-\beta}$ Here W=77%](./images/what_is_pw.pdf)
 
 Cohen's d and relation with n :
@@ -147,7 +146,7 @@ The power issue
 Studies of low power inflate the detected effect (2)
 ----------------------------------------------------
 
-![A quick simulation](./images/power_true.pdf)
+![Repeating experiments: estimated effects are above t05 line, leading to a biased estimation compared to true simulated effect.](./images/power_true.pdf)
 
 The power issue
 ===================
@@ -182,11 +181,12 @@ What is specific to Imaging Genetics
 Computing effect size in imaging genetics (1)
 ===============================================
 
-* Example of Hariri 2002: In Fig 3, Authors report $m_1 = .28, m_2 = .03, \textrm{SDM}_1 = 0.08, \textrm{SDM}_2 = 0.05, n_1 = n_2 = 14$ $\vspace{-0.5cm}$
+* Example of Hariri 2002: In Fig 3, Authors report $m_1 = .28, m_2 = .03, \textrm{SDM}_1 = 0.08, \textrm{SDM}_2 = 0.05, n_1 = n_2 = 14$ $\vspace{-0.20cm}$
     - ![Hariri et al. Science, 2002](./images/hariri_fig3.pdf)
+$\vspace{-0.10cm}$
 
 > * What is the effect size ? Compute 
-    - $s_{1,2} = \sqrt(14-1)\textrm{SDM}_{1,2}$, $d = \frac{m_1 - m_2}{s} = 1.05$
+    - $s_{1,2} = \sqrt(14-1)\textrm{SDM}_{1,2}$, $d = \frac{m_1 - m_2}{s} = 1.05$ 
 
 > * What is the percentage of variance explained ? 
     - $V_e = \frac{(n_1 + n_2)(m_1-m_2)^2}{n_1 s_1^2 + n_2 s_2^2 + (n_1 + n_2)(m_1-m_2)^2} > 40\%$
@@ -213,14 +213,13 @@ Effect size and reproducibility?
 * Effect size in imaging genetics:
     - BDNF and hippocampal volume: genuine effect or winners curse? d=0.12, p=0.02, Molendijk (2012)
     - Stein et al, 2012: marker is associated with 0.58% of intracranial volume per risk allele 
-    - COMT and DLPFC: meta analysis : d = 0.55,  N > 62 subjects (Meir, 2009) 
     - Flint 2014: Effect size of intermediate phenotype not much greater than others 
     - For psychiatric diseases: mean OR is 1.15, QT: variance explained by 1 locus << 0.5%, 0.1-0.3% for protein or serum concentration 
 
 > * Unlikely effect sizes
-    - HTTLPR and amygdala: Hariri 2002: p-value implies that locus explain > 40% of phenotypic variance. 
-    - KCTD8 / cortical area: Paus 2012: 21% of phenotypic variance (250 subjects)
-
+    - COMT and DLPFC: meta analysis : d = 0.55,  most studies N < 62 subjects (Meir, 2010) 
+    - HTTLPR and amygdala: Hariri 2002: p-value implies that locus explain > 40% of phenotypic variance. d=1.05
+    - KCTD8 / cortical area: Paus 2012: 21% of phenotypic variance (250 subjects), d=1.03.
 
 Effect size decreases with years
 =====================================
@@ -271,7 +270,6 @@ $\vspace{-0.5cm}$
 ![Recall by Genotype: Genotypic assignment vs randomisation assignment](./images/flint_2014_fig1_recall.pdf)
 
 
-
 Train the new generation 
 ===============================
 
@@ -291,6 +289,14 @@ What are the solutions: social
     - Increase the capacity of the community to verify, test and re-use
     - Increase capacity to do meta/mega analyses 
 * Decrease publication pressure (change evaluation criteria - cf new NIH biosketch)  
+
+Conclusion : Jason's questions
+======================================
+
+(a) can I publish a candidate gene study ever?
+(b) if I can replicate this finding with one other lab at nominal significance, is that sufficient?
+(c) if a SNP is genome-wide significant in a disease study, am I allowed to study its effects in my own lab without multiple comparisons correction? without replication?
+(d) can I study rare variants instead without worry of all this statistical correction and power?
 
 Acknowledgement & Conclusion 
 ======================================
