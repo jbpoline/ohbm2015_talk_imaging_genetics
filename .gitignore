@@ -1,0 +1,11 @@
+images/
+*.pdf
+fromjason.*
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.log
+
