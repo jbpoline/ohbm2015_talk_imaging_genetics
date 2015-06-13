@@ -5,7 +5,11 @@ The problem of reproducibility for Imaging genetics
 Jean-Baptiste Poline  
 ---------------------
 
-Helen Wills Neuroscience Institute, UC Berkeley
+Henry Wheeler Brain Imaging Center, 
+
+Helen Wills Neuroscience Institute, 
+
+University of California Berkeley
 
 
 Reproducibility - preliminary remarks
@@ -14,8 +18,6 @@ Reproducibility - preliminary remarks
 * Reminding ourselves : Reproducibility is the backbone of scientific activity
 * Reproducibility versus replicability
 * Is there a problem ?
-    - Not everybody is convinced that there is a problem 
-    - Do we have hard evidence ? 
 * Plan: 
     - Evidence for the problem
     - Causes: especially power issues
@@ -74,8 +76,9 @@ The power issue
 ===================
 
 * Ioannidis 2005: _"Why most research findings are false"_
+* Button et al. 2013: _"Power failure"_
 * Remember what is power
-* What exactly are the issues of low powered studies
+* What are the issues of low powered studies
 * Tools to compute power
 * What is our effect size?
 
@@ -237,6 +240,7 @@ What are the solutions:
 - Pre-register hypotheses 
     - More hypotheses 
     - Candidate versus GWAS: cf Flint & Mufano, 2012
+
 > - Statistics: 
     - What is your likely effect size ?
     - Power analyses with the smallest expected effect size (cost does not enter in this calculation) 
