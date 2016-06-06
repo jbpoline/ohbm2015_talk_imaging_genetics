@@ -1,16 +1,14 @@
-
-The problem of reproducibility for Imaging genetics
-======================================================
-
-Jean-Baptiste Poline  
----------------------
-
-Henry Wheeler Brain Imaging Center, 
-
-Helen Wills Neuroscience Institute, 
-
-University of California Berkeley
-
+---
+title: Reproducibility in Brain Imaging Genetics  
+subtitle: The question of reproducibility in Brain Imaging Genetics  
+author: Jean-Baptiste Poline  \newline  \newline
+   \small \texttt{jbpoline@berkeley.edu}  
+shortauthor: JB Poline
+institute: Henry Wheeler Jr. Brain Imaging Center,  \newline
+	Helen Wills Neuroscience Institute, UC Berkeley, CA  
+shortinstitute: UC Berkeley
+date: June 24, 2016
+---
 
 Reproducibility - preliminary remarks
 ======================================================
@@ -23,6 +21,7 @@ Reproducibility - preliminary remarks
     - Causes: especially power issues
     - What should we do
 
+
 Reproducibility - evidence of the problem
 ======================================================
 
@@ -30,39 +29,50 @@ Reproducibility - evidence of the problem
     - New mechanism for independently replicating needed 
     - Easy to misinterpret artefacts as biologically important  
     - Too many sloppy mistakes 
-    - Revised standard for statistical evidence (PNAS 2013)
+    - Is most published research really false?  Leek and Jager, 2016
 
-> * In epidemiology
-    - Ioannidis 2011: “The FP/FN Ratio in Epidemiologic Studies:” 
+> * In epidemiology Ioannidis 2011: “The FP/FN Ratio in Epidemiologic Studies:” 
 
 > * In social sciences and in psychology
-    - Reproducibility Project: Psychology (open science foundation)
-    - Simmons, et al. “... Undisclosed Flexibility ... Allows Presenting Anything as Significant.” 2011. 
+    * Estimating the Reproducibility of Psychology (open science collaboration)
+    * Simmons, et al. “... Undisclosed Flexibility ... Allows Presenting Anything as Significant.” 2011.
 
 > * In cognitive neuroscience
-    - Barch, Deanna M., and Tal Yarkoni. “Special Issue on Reliability and Replication in Cognitive and Affective Neuroscience Research.”  2013.
+    - Barch, Deanna M., and Tal Yarkoni. “Special Issue on Reliability and Replication”  2013.
 
 Reproducibility - evidence of the problem
 ======================================================
 
-* Oncology Research: 
-    - Begley C.G. & Ellis L. Nature, (2012): "6 out of 53 key findings could not be replicated"
+* Oncology Research: Begley C.G. & Ellis L. Nature, (2012): "6 out of 53 key findings... "
 
-> * In brain imaging
-    - Reproducibility Issues in Multicentre MRI Studies, J. Jovicich 
+* In brain imaging
     - Raemaekers,  “Test–retest Reliability of fMRI...",  2007 
     - Thirion et al., 2007: reproducibility of second level analyses
+    - Boekel et al, 2015, Kanai et al, 2016, Mulhert et al, 2016
 
-> * In genetics
-    - Ionannidis 2007: 16 SNPs hypothesized, check on 12-32k cancer/control: "... results are largely null." 
-    - Many references and warning: eg:"Drinking from the fire hose ..." by Hunter and Kraft, 2007.
+* In genetics
+    - Ionannidis 2007: 16 SNPs hypothesized, check on 12-32k cancer/control 
+    - "Drinking from the fire hose ..." by Hunter and Kraft, 2007.
+    - Mufano 2009: Bias in genetic association studies and impact factor
+    - Heller 2014: Replicability analysis for GWAS
 
-> * And in imaging genetics ?
+* And in imaging genetics ?
+    - Functional Connectivity Analyses in Imaging Genetics 
+    - Statistical issue in enrichment analysis led to paper retraction.
+
+Reproducibility - do we start to care ? 
+========================================
+
+![Why do we have reproducibility issues](./images/metric_publi_reproducibility.pdf)
 
 Why do we have a problem? 
-===========================
-* Things are getting complex
-    - Data description, data size, computations, statistical methods
+==========================
+
+![Why do we have reproducibility issues](./images/why_reproducibility_issues.pdf)
+
+Why do we have a problem? 
+==========================
+
 * Publication pressure is high
     - Cannot afford *not* to have a paper out of this data set - competitive research
 * Mistakes are done
@@ -233,6 +243,12 @@ $\vspace{-1.2cm}$
 
 ![Mier, 2009, COMT & DLPFC](./images/mier_2009_f4.pdf)
 
+Bias and impact factors
+=====================================
+
+
+![Munafo et al., 2009](./images/munafo_bias_impact_factor.pdf)
+
 
 What are the solutions: 
 =========================
@@ -244,7 +260,8 @@ What are the solutions:
 > - Statistics: 
     - What is your likely effect size ?
     - Power analyses with the smallest expected effect size (cost does not enter in this calculation) 
-    - Take robust statistical tools
+    - Take robust statistical tools 
+    - Revised standard for statistical evidence (PNAS 2013)
     - Meta analysis - cf Enigma / Replication whenever possible 
     - Effect size variation estimation (bootstrapping)
 
@@ -294,6 +311,22 @@ What are the solutions: social
     - Increase capacity to do meta/mega analyses 
 * Decrease publication pressure (change evaluation criteria - cf new NIH biosketch)  
 
+
+Imaging Genetic Data available: The good, the bad, the ugly
+============================================================
+
+* Criteria:
+    - amount of subjects
+    - quality of data / quality of documentation
+    - Quantity/quality of demographic/behavioural/assesments data
+    - *Strings attached*
+
+* Available:
+    - UK biobank
+    - Enigma
+    - ADNI
+    - others
+
 Conclusion : Jason's questions
 ======================================
 
@@ -312,20 +345,3 @@ Acknowledgement & Conclusion
 
 ![Donoho on publication](./images/dono.pdf)
 
--------------------------------------------------------------------------------
-
-What are the solutions: learning 
-===================================
-
-- Learn the right computing tools: 
-    - How can I check my code ? How can I go back to a certain state ? (learn git/mercurial, learn git Annex or others)
-    - How can others check my analyses? Learn the emerging social open science frameworks
-- Learn "one layer below" (A. Martelli)
-
-[rpsychologist.com/d3/cohend]rpsychologist.com/d3/cohend
-
-
-> * Reproducibility / error rate
-    - Silver, Montanna, Nichols (beware of low threshold forming clusters)
-    - Flint and Mufano: First 2002 5-HTT result is unlikely
-    - Meyer-Lindenberg et al., 2008: Not a problem ? False positives in imaging genetics. But ... 

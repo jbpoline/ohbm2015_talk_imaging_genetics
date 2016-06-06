@@ -9,10 +9,10 @@ PAPER      = talk
 LATEX      = pdflatex 
 BIBTEX     = bibtex 
 VISUALIZE  = evince
-TOCLEAN    = $(PAPER).aux $(PAPER).toc $(PAPER).log \
-	     $(PAPER).out $(PAPER).bbl $(PAPER).blg \
-	     $(PAPER).spl $(PAPER).dvi $(PAPER).nav \
-	     $(PAPER).snm $(PAPER).vrb _tmp.tex
+TOCLEAN    = $(TALK).aux $(TALK).toc $(TALK).log \
+	     $(TALK).out $(TALK).bbl $(TALK).blg \
+	     $(TALK).spl $(TALK).dvi $(TALK).nav \
+	     $(TALK).snm $(TALK).vrb $(TALK).pdf _tmp.tex 
 
 
 # Internal variables.
@@ -47,12 +47,12 @@ all:
 	-make $(PAPER) 
 	-make visu
 
-slides:
-	-make beamer
-	-mv $(TALK).tex _tmp.tex
-	-cat $(HEADER).tex _tmp.tex $(FOOTER).tex > $(TALK).tex
-	-$(LATEX) $(TALK).tex
-	-$(VISUALIZE) $(TALK).pdf
+# slides:
+# 	-make beamer
+# 	-mv $(TALK).tex _tmp.tex
+# 	-cat $(HEADER).tex _tmp.tex $(FOOTER).tex > $(TALK).tex
+# 	-$(LATEX) $(TALK).tex
+# 	-$(VISUALIZE) $(TALK).pdf
 
 beamer:
 	-pandoc  -t beamer $(TALK).md -V theme:$(THEME) -o $(TALK).tex
@@ -60,4 +60,7 @@ beamer:
 pandoc:
 	-pandoc  -t beamer $(TALK).md -V theme:$(THEME) -o $(TALK).pdf
 
+slides:
+	-pandoc  -t beamer $(TALK).md -V theme:$(THEME) -o $(TALK).pdf
+	-make visu
 
